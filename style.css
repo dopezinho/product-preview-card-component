@@ -46,7 +46,8 @@ body {
     margin: 0 1.25rem;
 }
 
-button, li {
+button,
+li {
     font-family: inherit;
     margin-bottom: 1rem;
 }
@@ -127,7 +128,8 @@ p {
 }
 
 .container .btn:hover {
-    background-color: hsl(158, 39%, 22%);;
+    background-color: hsl(158, 39%, 22%);
+    ;
 }
 
 .container .btn img {
@@ -169,4 +171,4 @@ p {
     .container p {
         margin-bottom: 1rem;
     }
-}   
+}
