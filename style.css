@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
 
+/* Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+/* base colors */
 
 :root {
     --dark-cyan: hsl(158, 36%, 37%);
@@ -15,6 +23,8 @@
     --dark-grayish-blue: hsl(228, 12%, 48%);
     --white: hsl(0, 0%, 100%);
 }
+
+/* Actual Code */
 
 ul {
     list-style-type: none;
@@ -38,24 +48,16 @@ body {
 
 button, li {
     font-family: inherit;
-}
-
-h1 {
-    color: var(--very-dark-blue);
+    margin-bottom: 1rem;
 }
 
 .price {
     color: var(--dark-cyan);
 }
 
-h1, 
-.price {
-    font-family: "Fraunces", sans-serif;
-}
-
-h2 {
+h1 {
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: var(--dark-grayish-blue);
     margin-bottom: 1rem;
@@ -67,13 +69,14 @@ p {
     line-height: 1.8;
 }
 
-.container {
-    max-width: 600px;
+.head {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--very-dark-blue);
 }
 
-.container h1 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
+.container {
+    max-width: 600px;
 }
 
 .container article:nth-child(1) img {
@@ -94,7 +97,6 @@ p {
 .container ul {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
 }
 
 .container ul li:nth-child(1) {
